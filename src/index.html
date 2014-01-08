@@ -1,0 +1,27 @@
+﻿<!doctype html>
+<html ng-app>
+<head>
+</head>
+<body>
+    <div ng-controller="CalorieCtrl">
+        <div>
+            <label><input type="radio" ng-model="sex" value="m"/>Man</label>
+            <label><input type="radio" ng-model="sex" value="w"/>Woman</label>
+        </div>
+        <div>
+            <label>Weight, kg: <input type="text" ng-model="weight"/></label>
+        </div>
+        <div>
+            <label>Growth, cm: <input type="text" ng-model="growth"/></label>
+        <div>
+        <div>
+            <label>Age, years: <input type="text" ng-model="age"/></label>
+        </div>
+        <div>
+            <b>Calories per day: {{result()}}</b>
+        </div>
+    </div>
+    <script src="js/angular.min.js"></script>
+    <script src="js/calorie.js"></script>
+</body>
+</html>
